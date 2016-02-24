@@ -2,11 +2,11 @@
 
 ![Rendering](images/render1.png)
 
-This repository contains some documentation and data created during my MIDIBox SEQ V4 build process. Please note that I'm not the original author of the project! The original project is hosted at http://ucapps.de
+This repository contains some documentation and data created during the build process of a MIDIBox SEQ V4. Please note that I'm **not** the original author of the project. The original project is hosted at http://ucapps.de
 
 ## MIDIbox PCBs
 
-I ordered my PCBs from http://midiboxshop.bigcartel.com
+I ordered the PCBs from http://midiboxshop.bigcartel.com
 
 Here is the list:
 
@@ -18,21 +18,21 @@ Here is the list:
 
 ## Parts
 
-I have ordered the parts from [TME](http://www.tme.eu/en), [Reichelt](http://www.reichelt.com/), [DigiKey](http://www.digikey.com) and [Mouser](http://www.mouser.com). Sourcing the parts is a little painful. In addition, for some parts there are a few (or many) options. The following are a few notes on the parts I've chosen for the build:
+I ordered the parts from [TME](http://www.tme.eu/en), [Reichelt](http://www.reichelt.com/), [DigiKey](http://www.digikey.com) and [Mouser](http://www.mouser.com). Sourcing the parts is a little painful. In addition, for some parts there are a few (or many) options. The following are a few notes on the parts I've chosen for the build:
 
 - ALPS [Reichelt](https://www.reichelt.com/Drehimpulsgeber/STEC12E08/3/index.html?&ACTION=3&LA=5011&GROUP=B29&GROUPID=3714&ARTICLE=73923&OFFSET=1000&SORT=artnr)
 TODO
 
 ## Custom PCB
 
-As I wanted a nice backpanel as well as Ethernet support, I designed my own PCB with the following additional features:
+As I wanted to have nice backpanel as well as Ethernet support, I designed a PCB with the following additional features:
 
 - Ethernet via SPI (based on http://ucapps.de/mbhp_eth.html)
 - SD card socket
 - USB connector
 - +/- 12V DC/DC converter for the AOUT power supply
 
-I have designed the PCB in [KiCad](http://kicad-pcb.org/) and ordered it from [OSH Park](https://oshpark.com/). The PCB is available [here](https://oshpark.com/shared_projects/DuxxcHS7). Feel free to order your own!
+The PCB was designed in [KiCad](http://kicad-pcb.org/) and produced by [OSH Park](https://oshpark.com/). The PCB is available [here](https://oshpark.com/shared_projects/DuxxcHS7). Feel free to order your own!
 
 Here is the bill of materials:
 
@@ -58,9 +58,9 @@ Here is the bill of materials:
 
 ## Frontpanel / Case
 
-![Frontpanel](images/front.svg)
+![Frontpanel](https://cdn.rawgit.com/westlicht/midibox-seq-v4/master/images/front.svg)
 
-![Backpanel](images/top.svg)
+![Backpanel](https://cdn.rawgit.com/westlicht/midibox-seq-v4/master/images/top.svg)
 
 The frontpanel is based on the [Wilba frontpanel](http://www.midibox.org/dokuwiki/doku.php?id=wilba_mb_seq). I only adjusted some of the drillings in addition to moving things around slightly to make sure everything fits within the case. The backpanel was designed from scratch in order to fit nicely with the MIDI I/O PCBs as well as my own PCB. In addition, a DSUB-25 connector is used for the analog bus and a few important analog outputs are available seperatly on 3.5 mm jacks. The rest of the case are just basic aluminium panels and everything is hold together by enclosure profiles. The case can be ordered from [Schaeffer AG](https://www.schaeffer-ag.de). All required files are available in the ``case`` directory.
 
