@@ -70,4 +70,24 @@ The frontpanel is based on the [Wilba frontpanel](http://www.midibox.org/dokuwik
 ## Links
 
 
+## Build Images
+
+![Build](images/seqv4-build-01.jpg)
+![Build](images/seqv4-build-02.jpg)
+![Build](images/seqv4-build-03.jpg)
+![Build](images/seqv4-build-04.jpg)
+![Build](images/seqv4-build-05.jpg)
+![Build](images/seqv4-build-06.jpg)
+![Build](images/seqv4-build-07.jpg)
+![Build](images/seqv4-build-08.jpg)
+![Build](images/seqv4-build-09.jpg)
+![Build](images/seqv4-build-10.jpg)
+![Build](images/seqv4-build-11.jpg)
+![Build](images/seqv4-build-12.jpg)
+![Build](images/seqv4-build-13.jpg)
+![Build](images/seqv4-build-14.jpg)
+![Build](images/seqv4-build-15.jpg)
+![Build](images/seqv4-build-16.jpg)
+![Build](images/seqv4-build-17.jpg)
+
 
