@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name w_conn_pc)(type KiCad)(uri /Users/freak/Documents/kicad/modules/w_conn_pc.pretty)(options "")(descr ""))
+  (lib (name sd-socket)(type Legacy)(uri /Users/freak/Documents/kicad/modules/sd-socket.mod)(options "")(descr ""))
+  (lib (name w_capacitors)(type KiCad)(uri /Users/freak/Documents/kicad/modules/w_capacitors.pretty)(options "")(descr ""))
+  (lib (name custom)(type KiCad)(uri /Users/freak/Documents/kicad/modules/custom.pretty)(options "")(descr ""))
+  (lib (name pulse-eng)(type Legacy)(uri /Users/freak/Documents/kicad/modules/pulse-eng.mod)(options "")(descr ""))
+)

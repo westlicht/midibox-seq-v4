@@ -1,0 +1,1072 @@
+EESchema Schematic File Version 2
+LIBS:seqboard-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:custom
+LIBS:sd-socket
+LIBS:w_analog
+LIBS:w_microcontrollers
+LIBS:w_transistor
+LIBS:w_connectors
+LIBS:w_memory
+LIBS:w_rtx
+LIBS:w_logic
+LIBS:w_opto
+LIBS:w_vacuum
+LIBS:w_device
+LIBS:w_relay
+LIBS:pulse-eng
+LIBS:seqboard-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ENC28J60-I/SP IC1
+U 1 1 56B863C7
+P 4250 2800
+F 0 "IC1" H 3700 3750 50  0000 L CNN
+F 1 "ENC28J60-I/SP" H 4450 3750 50  0000 L CNN
+F 2 "Housings_DIP:DIP-28_W7.62mm_LongPads" H 4250 2800 50  0001 C CIN
+F 3 "" H 4250 2800 50  0000 C CNN
+	1    4250 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C7
+U 1 1 56B8641C
+P 4950 3950
+F 0 "C7" H 4975 4050 50  0000 L CNN
+F 1 "10uF Tantal" H 4975 3850 50  0000 L CNN
+F 2 "w_capacitors:cnp_3mm_disc" H 4950 3950 50  0001 C CNN
+F 3 "" H 4950 3950 50  0000 C CNN
+	1    4950 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-seqboard #PWR01
+U 1 1 56B86533
+P 4150 3850
+F 0 "#PWR01" H 4150 3600 50  0001 C CNN
+F 1 "GND" H 4150 3700 50  0000 C CNN
+F 2 "" H 4150 3850 50  0000 C CNN
+F 3 "" H 4150 3850 50  0000 C CNN
+	1    4150 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Crystal Y1
+U 1 1 56B88AF1
+P 3100 3200
+F 0 "Y1" H 3100 3350 50  0000 C CNN
+F 1 "25MHz" H 3100 3050 50  0000 C CNN
+F 2 "Crystals:Crystal_HC49-U_Vertical" H 3100 3200 50  0001 C CNN
+F 3 "" H 3100 3200 50  0000 C CNN
+	1    3100 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L C C2
+U 1 1 56B88B8D
+P 2650 3050
+F 0 "C2" H 2675 3150 50  0000 L CNN
+F 1 "18pF" H 2675 2950 50  0000 L CNN
+F 2 "w_capacitors:cnp_3mm_disc" H 2688 2900 50  0001 C CNN
+F 3 "" H 2650 3050 50  0000 C CNN
+	1    2650 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L C C3
+U 1 1 56B88BD6
+P 2650 3350
+F 0 "C3" H 2675 3450 50  0000 L CNN
+F 1 "18pF" H 2675 3250 50  0000 L CNN
+F 2 "w_capacitors:cnp_3mm_disc" H 2688 3200 50  0001 C CNN
+F 3 "" H 2650 3350 50  0000 C CNN
+	1    2650 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L GND-RESCUE-seqboard #PWR02
+U 1 1 56B88C97
+P 2300 3200
+F 0 "#PWR02" H 2300 2950 50  0001 C CNN
+F 1 "GND" H 2300 3050 50  0000 C CNN
+F 2 "" H 2300 3200 50  0000 C CNN
+F 3 "" H 2300 3200 50  0000 C CNN
+	1    2300 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L GND-RESCUE-seqboard #PWR03
+U 1 1 56B89024
+P 4950 2600
+F 0 "#PWR03" H 4950 2350 50  0001 C CNN
+F 1 "GND" H 4950 2450 50  0000 C CNN
+F 2 "" H 4950 2600 50  0000 C CNN
+F 3 "" H 4950 2600 50  0000 C CNN
+	1    4950 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND-RESCUE-seqboard #PWR04
+U 1 1 56B8906D
+P 5700 3400
+F 0 "#PWR04" H 5700 3150 50  0001 C CNN
+F 1 "GND" H 5700 3250 50  0000 C CNN
+F 2 "" H 5700 3400 50  0000 C CNN
+F 3 "" H 5700 3400 50  0000 C CNN
+	1    5700 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 56B890A4
+P 5550 3400
+F 0 "R1" V 5630 3400 50  0000 C CNN
+F 1 "2.32K" V 5550 3400 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 5480 3400 50  0001 C CNN
+F 3 "" H 5550 3400 50  0000 C CNN
+	1    5550 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L GND-RESCUE-seqboard #PWR05
+U 1 1 56B8913F
+P 4950 3100
+F 0 "#PWR05" H 4950 2850 50  0001 C CNN
+F 1 "GND" H 4950 2950 50  0000 C CNN
+F 2 "" H 4950 3100 50  0000 C CNN
+F 3 "" H 4950 3100 50  0000 C CNN
+	1    4950 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND-RESCUE-seqboard #PWR06
+U 1 1 56B8916E
+P 4350 3850
+F 0 "#PWR06" H 4350 3600 50  0001 C CNN
+F 1 "GND" H 4350 3700 50  0000 C CNN
+F 2 "" H 4350 3850 50  0000 C CNN
+F 3 "" H 4350 3850 50  0000 C CNN
+	1    4350 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V-RESCUE-seqboard #PWR07
+U 1 1 56B891CC
+P 5400 2300
+F 0 "#PWR07" H 5400 2150 50  0001 C CNN
+F 1 "+3.3V" H 5400 2440 50  0000 C CNN
+F 2 "" H 5400 2300 50  0000 C CNN
+F 3 "" H 5400 2300 50  0000 C CNN
+	1    5400 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V-RESCUE-seqboard #PWR08
+U 1 1 56B89213
+P 4350 1500
+F 0 "#PWR08" H 4350 1350 50  0001 C CNN
+F 1 "+3.3V" H 4350 1640 50  0000 C CNN
+F 2 "" H 4350 1500 50  0000 C CNN
+F 3 "" H 4350 1500 50  0000 C CNN
+	1    4350 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V-RESCUE-seqboard #PWR09
+U 1 1 56B8924E
+P 2350 2750
+F 0 "#PWR09" H 2350 2600 50  0001 C CNN
+F 1 "+3.3V" H 2350 2890 50  0000 C CNN
+F 2 "" H 2350 2750 50  0000 C CNN
+F 3 "" H 2350 2750 50  0000 C CNN
+	1    2350 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V-RESCUE-seqboard #PWR010
+U 1 1 56B8927D
+P 4150 1500
+F 0 "#PWR010" H 4150 1350 50  0001 C CNN
+F 1 "+3.3V" H 4150 1640 50  0000 C CNN
+F 2 "" H 4150 1500 50  0000 C CNN
+F 3 "" H 4150 1500 50  0000 C CNN
+	1    4150 1500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3550 3600
+NoConn ~ 3550 2700
+NoConn ~ 3550 2800
+NoConn ~ 3550 2000
+$Comp
+L +3.3V-RESCUE-seqboard #PWR011
+U 1 1 56B89EF6
+P 5400 2800
+F 0 "#PWR011" H 5400 2650 50  0001 C CNN
+F 1 "+3.3V" H 5400 2940 50  0000 C CNN
+F 2 "" H 5400 2800 50  0000 C CNN
+F 3 "" H 5400 2800 50  0000 C CNN
+	1    5400 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-seqboard #PWR012
+U 1 1 56B89F56
+P 5700 2800
+F 0 "#PWR012" H 5700 2550 50  0001 C CNN
+F 1 "GND" H 5700 2650 50  0000 C CNN
+F 2 "" H 5700 2800 50  0000 C CNN
+F 3 "" H 5700 2800 50  0000 C CNN
+	1    5700 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C9
+U 1 1 56B89FA3
+P 5550 2800
+F 0 "C9" H 5575 2900 50  0000 L CNN
+F 1 "100nF" H 5575 2700 50  0000 L CNN
+F 2 "w_capacitors:cnp_3mm_disc" H 5588 2650 50  0001 C CNN
+F 3 "" H 5550 2800 50  0000 C CNN
+	1    5550 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L GND-RESCUE-seqboard #PWR013
+U 1 1 56B8A6BD
+P 1150 2150
+F 0 "#PWR013" H 1150 1900 50  0001 C CNN
+F 1 "GND" H 1150 2000 50  0000 C CNN
+F 2 "" H 1150 2150 50  0000 C CNN
+F 3 "" H 1150 2150 50  0000 C CNN
+	1    1150 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L +3.3V-RESCUE-seqboard #PWR014
+U 1 1 56B8A851
+P 1150 2400
+F 0 "#PWR014" H 1150 2250 50  0001 C CNN
+F 1 "+3.3V" H 1150 2540 50  0000 C CNN
+F 2 "" H 1150 2400 50  0000 C CNN
+F 3 "" H 1150 2400 50  0000 C CNN
+	1    1150 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L HEADER_5x2 J1
+U 1 1 56B9BF48
+P 1300 1350
+F 0 "J1" H 1300 1650 60  0000 C CNN
+F 1 "HEADER_5x2" H 1300 1050 60  0000 C CNN
+F 2 "Connect:IDC_Header_Straight_10pins" H 1300 1350 60  0001 C CNN
+F 3 "" H 1300 1350 60  0000 C CNN
+	1    1300 1350
+	1    0    0    -1  
+$EndComp
+Text Label 950  1150 0    60   ~ 0
+Vs
+Text Label 1550 1150 0    60   ~ 0
+Vs
+Text Label 950  1250 0    60   ~ 0
+Vd
+Text Label 1550 1250 0    60   ~ 0
+Vd
+Text Label 950  1350 0    60   ~ 0
+SO
+Text Label 1550 1350 0    60   ~ 0
+SI
+Text Label 950  1450 0    60   ~ 0
+SC
+Text Label 950  1550 0    60   ~ 0
+RC2
+Text Label 1500 1550 0    60   ~ 0
+RC1
+Text Label 1550 1450 0    60   ~ 0
+SC
+Text Label 3350 2200 0    60   ~ 0
+SI
+Text Label 3350 2300 0    60   ~ 0
+SO
+Text Label 3350 2400 0    60   ~ 0
+SC
+Text Label 3350 2500 0    60   ~ 0
+RC2
+Text Label 1250 2150 0    60   ~ 0
+Vs
+Text Label 1250 2400 0    60   ~ 0
+Vd
+$Comp
+L PWR_FLAG #FLG015
+U 1 1 56B9D3E9
+P 1200 2400
+F 0 "#FLG015" H 1200 2670 30  0001 C CNN
+F 1 "PWR_FLAG" H 1200 2630 30  0000 C CNN
+F 2 "" H 1200 2400 60  0000 C CNN
+F 3 "" H 1200 2400 60  0000 C CNN
+	1    1200 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG016
+U 1 1 56B9D5C2
+P 1200 2150
+F 0 "#FLG016" H 1200 2420 30  0001 C CNN
+F 1 "PWR_FLAG" H 1200 2380 30  0000 C CNN
+F 2 "" H 1200 2150 60  0000 C CNN
+F 3 "" H 1200 2150 60  0000 C CNN
+	1    1200 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_B P1
+U 1 1 56B9C87A
+P 1250 4100
+F 0 "P1" H 1450 3900 50  0000 C CNN
+F 1 "USB_B" H 1200 4300 50  0000 C CNN
+F 2 "Connect:USB_B" V 1200 4000 50  0001 C CNN
+F 3 "" V 1200 4000 50  0000 C CNN
+	1    1250 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER_4 J2
+U 1 1 56B9CA01
+P 1850 4300
+F 0 "J2" H 1850 4550 60  0000 C CNN
+F 1 "HEADER_4" H 1850 4050 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 1850 4300 60  0001 C CNN
+F 3 "" H 1850 4300 60  0000 C CNN
+	1    1850 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND-RESCUE-seqboard #PWR017
+U 1 1 56B9CC51
+P 1550 4000
+F 0 "#PWR017" H 1550 4000 30  0001 C CNN
+F 1 "GND" H 1550 3930 30  0001 C CNN
+F 2 "" H 1550 4000 60  0000 C CNN
+F 3 "" H 1550 4000 60  0000 C CNN
+	1    1550 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND-RESCUE-seqboard #PWR018
+U 1 1 56B9D8F4
+P 1450 7050
+F 0 "#PWR018" H 1450 7050 30  0001 C CNN
+F 1 "GND" H 1450 6980 30  0001 C CNN
+F 2 "" H 1450 7050 60  0000 C CNN
+F 3 "" H 1450 7050 60  0000 C CNN
+	1    1450 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-seqboard #PWR019
+U 1 1 56B9D94D
+P 1650 7050
+F 0 "#PWR019" H 1650 7050 30  0001 C CNN
+F 1 "GND" H 1650 6980 30  0001 C CNN
+F 2 "" H 1650 7050 60  0000 C CNN
+F 3 "" H 1650 7050 60  0000 C CNN
+	1    1650 7050
+	1    0    0    -1  
+$EndComp
+Text Label 1050 5650 0    60   ~ 0
+RC1
+Text Label 1050 5850 0    60   ~ 0
+Vs
+Text Label 1050 5950 0    60   ~ 0
+Vd
+Text Label 1050 6050 0    60   ~ 0
+SC
+Text Label 1050 6150 0    60   ~ 0
+Vs
+Text Label 1050 6250 0    60   ~ 0
+SO
+Text Label 1050 5750 0    60   ~ 0
+SI
+NoConn ~ 1050 6350
+NoConn ~ 1050 6450
+$Comp
+L GND-RESCUE-seqboard #PWR020
+U 1 1 56BA0765
+P 10100 2150
+F 0 "#PWR020" H 10100 2150 30  0001 C CNN
+F 1 "GND" H 10100 2080 30  0001 C CNN
+F 2 "" H 10100 2150 60  0000 C CNN
+F 3 "" H 10100 2150 60  0000 C CNN
+	1    10100 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R6
+U 1 1 56BA07C1
+P 10250 2050
+F 0 "R6" V 10330 2050 50  0000 C CNN
+F 1 "220" V 10250 2050 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 10180 2050 50  0001 C CNN
+F 3 "" H 10250 2050 50  0000 C CNN
+	1    10250 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R7
+U 1 1 56BA0830
+P 10250 1750
+F 0 "R7" V 10330 1750 50  0000 C CNN
+F 1 "220" V 10250 1750 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 10180 1750 50  0001 C CNN
+F 3 "" H 10250 1750 50  0000 C CNN
+	1    10250 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND-RESCUE-seqboard #PWR021
+U 1 1 56BA097F
+P 10100 1850
+F 0 "#PWR021" H 10100 1850 30  0001 C CNN
+F 1 "GND" H 10100 1780 30  0001 C CNN
+F 2 "" H 10100 1850 60  0000 C CNN
+F 3 "" H 10100 1850 60  0000 C CNN
+	1    10100 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R2
+U 1 1 56BA0B9B
+P 7700 1700
+F 0 "R2" V 7780 1700 50  0000 C CNN
+F 1 "49.9" V 7700 1700 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 7630 1700 50  0001 C CNN
+F 3 "" H 7700 1700 50  0000 C CNN
+	1    7700 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R3
+U 1 1 56BA0C0B
+P 7700 2000
+F 0 "R3" V 7780 2000 50  0000 C CNN
+F 1 "49.9" V 7700 2000 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 7630 2000 50  0001 C CNN
+F 3 "" H 7700 2000 50  0000 C CNN
+	1    7700 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R5
+U 1 1 56BA0C7B
+P 7700 2900
+F 0 "R5" V 7780 2900 50  0000 C CNN
+F 1 "49.9" V 7700 2900 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 7630 2900 50  0001 C CNN
+F 3 "" H 7700 2900 50  0000 C CNN
+	1    7700 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R4
+U 1 1 56BA0CEE
+P 7700 2600
+F 0 "R4" V 7780 2600 50  0000 C CNN
+F 1 "49.9" V 7700 2600 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 7630 2600 50  0001 C CNN
+F 3 "" H 7700 2600 50  0000 C CNN
+	1    7700 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4950 3600 4950 3800
+Wire Wire Line
+	2800 3050 3250 3050
+Connection ~ 3100 3050
+Wire Wire Line
+	2800 3350 3250 3350
+Connection ~ 3100 3350
+Wire Wire Line
+	3550 3100 3250 3100
+Wire Wire Line
+	3250 3100 3250 3050
+Wire Wire Line
+	3550 3300 3250 3300
+Wire Wire Line
+	3250 3300 3250 3350
+Wire Wire Line
+	4950 2500 5150 2500
+Wire Wire Line
+	4950 2800 5400 2800
+Wire Wire Line
+	1450 1150 1650 1150
+Wire Wire Line
+	1450 1250 1650 1250
+Wire Wire Line
+	1450 1350 1650 1350
+Wire Wire Line
+	1450 1450 1650 1450
+Wire Wire Line
+	1150 1150 950  1150
+Wire Wire Line
+	1150 1250 950  1250
+Wire Wire Line
+	1150 1350 950  1350
+Wire Wire Line
+	1150 1450 950  1450
+Wire Wire Line
+	1150 1550 950  1550
+Wire Wire Line
+	3550 2200 3350 2200
+Wire Wire Line
+	3550 2300 3350 2300
+Wire Wire Line
+	3550 2400 3350 2400
+Wire Wire Line
+	3550 2500 3350 2500
+Wire Wire Line
+	1150 2150 1350 2150
+Wire Wire Line
+	1150 2400 1350 2400
+Connection ~ 1200 2400
+Connection ~ 1200 2150
+Wire Wire Line
+	1050 4400 1050 4500
+Wire Wire Line
+	1050 4500 1700 4500
+Wire Wire Line
+	1700 4500 1700 4400
+Wire Wire Line
+	1150 4400 1150 4600
+Wire Wire Line
+	1150 4600 1800 4600
+Wire Wire Line
+	1800 4600 1800 4400
+Wire Wire Line
+	1250 4400 1250 4700
+Wire Wire Line
+	1250 4700 1900 4700
+Wire Wire Line
+	1900 4700 1900 4400
+Wire Wire Line
+	1350 4400 1350 4800
+Wire Wire Line
+	1350 4800 2000 4800
+Wire Wire Line
+	2000 4800 2000 4400
+Wire Wire Line
+	1250 6350 1050 6350
+Wire Wire Line
+	1250 6250 1050 6250
+Wire Wire Line
+	1250 6150 1050 6150
+Wire Wire Line
+	1250 6050 1050 6050
+Wire Wire Line
+	1250 5950 1050 5950
+Wire Wire Line
+	1250 5850 1050 5850
+Wire Wire Line
+	1250 5750 1050 5750
+Wire Wire Line
+	1250 5650 1050 5650
+Wire Wire Line
+	1250 6450 1050 6450
+Wire Wire Line
+	1450 1550 1650 1550
+Wire Wire Line
+	2300 3200 2350 3200
+Wire Wire Line
+	2350 3050 2350 3600
+Wire Wire Line
+	2350 3050 2500 3050
+Wire Wire Line
+	2350 3350 2500 3350
+Connection ~ 2350 3200
+Wire Wire Line
+	4950 2000 5150 2000
+Wire Wire Line
+	4950 2100 5150 2100
+Text Label 4950 2000 0    60   ~ 0
+LEDA
+Text Label 4950 2100 0    60   ~ 0
+LEDB
+Wire Wire Line
+	10400 2050 10650 2050
+Wire Wire Line
+	10400 1750 10650 1750
+Text Label 10650 2050 2    60   ~ 0
+LEDA
+Text Label 10650 1750 2    60   ~ 0
+LEDB
+Connection ~ 7700 1850
+Connection ~ 7700 2750
+Wire Wire Line
+	4950 2400 5150 2400
+Wire Wire Line
+	4950 2900 5150 2900
+Wire Wire Line
+	4950 3000 5150 3000
+Text Label 4950 2400 0    60   ~ 0
+TPIN+
+Text Label 4950 2500 0    60   ~ 0
+TPIN-
+Text Label 4950 2900 0    60   ~ 0
+TPOUT+
+Text Label 4950 3000 0    60   ~ 0
+TPOUT-
+Wire Wire Line
+	8650 1550 7200 1550
+Wire Wire Line
+	8600 1850 7200 1850
+Wire Wire Line
+	7200 2150 8700 2150
+Wire Wire Line
+	7200 2450 8700 2450
+Wire Wire Line
+	7200 3050 8650 3050
+Connection ~ 7700 1550
+Connection ~ 7700 2150
+Connection ~ 7700 2450
+Connection ~ 7700 3050
+Text Label 7200 1550 0    60   ~ 0
+TPOUT+
+Text Label 7200 2150 0    60   ~ 0
+TPOUT-
+Text Label 7200 2450 0    60   ~ 0
+TPIN+
+Text Label 7200 3050 0    60   ~ 0
+TPIN-
+$Comp
+L C C10
+U 1 1 56BA39DA
+P 7050 1850
+F 0 "C10" H 7075 1950 50  0000 L CNN
+F 1 "100nF" H 7075 1750 50  0000 L CNN
+F 2 "w_capacitors:cnp_3mm_disc" H 7088 1700 50  0001 C CNN
+F 3 "" H 7050 1850 50  0000 C CNN
+	1    7050 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L C C11
+U 1 1 56BA3A4C
+P 7050 2750
+F 0 "C11" H 7075 2850 50  0000 L CNN
+F 1 "100nF" H 7075 2650 50  0000 L CNN
+F 2 "w_capacitors:cnp_3mm_disc" H 7088 2600 50  0001 C CNN
+F 3 "" H 7050 2750 50  0000 C CNN
+	1    7050 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L GND-RESCUE-seqboard #PWR022
+U 1 1 56BA3BA5
+P 6900 1850
+F 0 "#PWR022" H 6900 1850 30  0001 C CNN
+F 1 "GND" H 6900 1780 30  0001 C CNN
+F 2 "" H 6900 1850 60  0000 C CNN
+F 3 "" H 6900 1850 60  0000 C CNN
+	1    6900 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L GND-RESCUE-seqboard #PWR023
+U 1 1 56BA3BFB
+P 6900 2750
+F 0 "#PWR023" H 6900 2750 30  0001 C CNN
+F 1 "GND" H 6900 2680 30  0001 C CNN
+F 2 "" H 6900 2750 60  0000 C CNN
+F 3 "" H 6900 2750 60  0000 C CNN
+	1    6900 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L INDUCTOR L1
+U 1 1 56BA4072
+P 8050 1550
+F 0 "L1" V 8000 1550 50  0000 C CNN
+F 1 "INDUCTOR" V 8150 1550 50  0000 C CNN
+F 2 "Discret:R5" H 8050 1550 50  0001 C CNN
+F 3 "" H 8050 1550 50  0000 C CNN
+	1    8050 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V-RESCUE-seqboard #PWR024
+U 1 1 56BA41A5
+P 8050 1250
+F 0 "#PWR024" H 8050 1100 50  0001 C CNN
+F 1 "+3.3V" H 8050 1390 50  0000 C CNN
+F 2 "" H 8050 1250 50  0000 C CNN
+F 3 "" H 8050 1250 50  0000 C CNN
+	1    8050 1250
+	1    0    0    -1  
+$EndComp
+Connection ~ 8050 1850
+$Comp
+L SD-SOCKET-3M_SD-SOCKET-3M U1
+U 1 1 56BB42F8
+P 1650 6250
+F 0 "U1" H 1650 6250 60  0001 C CNN
+F 1 "SD-SOCKET-3M_SD-SOCKET-3M" H 1650 6250 60  0001 C CNN
+F 2 "sd-socket:SD-SOCKET-3M" H 1650 6250 60  0001 C CNN
+F 3 "" H 1650 6250 60  0000 C CNN
+	1    1650 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 6550 1050 6550
+Wire Wire Line
+	1250 6650 1050 6650
+NoConn ~ 1050 6550
+NoConn ~ 1050 6650
+$Comp
+L C C8
+U 1 1 56BB87AE
+P 5550 2300
+F 0 "C8" H 5575 2400 50  0000 L CNN
+F 1 "100nF" H 5575 2200 50  0000 L CNN
+F 2 "w_capacitors:cnp_3mm_disc" H 5588 2150 50  0001 C CNN
+F 3 "" H 5550 2300 50  0000 C CNN
+	1    5550 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 2300 5400 2300
+$Comp
+L GND #PWR025
+U 1 1 56BB8BB1
+P 5700 2300
+F 0 "#PWR025" H 5700 2050 50  0001 C CNN
+F 1 "GND" H 5700 2150 50  0000 C CNN
+F 2 "" H 5700 2300 50  0000 C CNN
+F 3 "" H 5700 2300 50  0000 C CNN
+	1    5700 2300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 3400 5400 3400
+$Comp
+L C C6
+U 1 1 56BB9718
+P 4500 1500
+F 0 "C6" H 4525 1600 50  0000 L CNN
+F 1 "100nF" H 4525 1400 50  0000 L CNN
+F 2 "w_capacitors:cnp_3mm_disc" H 4538 1350 50  0001 C CNN
+F 3 "" H 4500 1500 50  0000 C CNN
+	1    4500 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L C C5
+U 1 1 56BB977C
+P 4000 1500
+F 0 "C5" H 4025 1600 50  0000 L CNN
+F 1 "100nF" H 4025 1400 50  0000 L CNN
+F 2 "w_capacitors:cnp_3mm_disc" H 4038 1350 50  0001 C CNN
+F 3 "" H 4000 1500 50  0000 C CNN
+	1    4000 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4150 1750 4150 1500
+Wire Wire Line
+	4350 1750 4350 1500
+$Comp
+L GND #PWR026
+U 1 1 56BB98CB
+P 4650 1500
+F 0 "#PWR026" H 4650 1250 50  0001 C CNN
+F 1 "GND" H 4650 1350 50  0000 C CNN
+F 2 "" H 4650 1500 50  0000 C CNN
+F 3 "" H 4650 1500 50  0000 C CNN
+	1    4650 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR027
+U 1 1 56BB992A
+P 3850 1500
+F 0 "#PWR027" H 3850 1250 50  0001 C CNN
+F 1 "GND" H 3850 1350 50  0000 C CNN
+F 2 "" H 3850 1500 50  0000 C CNN
+F 3 "" H 3850 1500 50  0000 C CNN
+	1    3850 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 3400 3350 3400
+Wire Wire Line
+	3350 3400 3350 3600
+Wire Wire Line
+	3350 3600 2350 3600
+Connection ~ 2350 3350
+$Comp
+L C C1
+U 1 1 56BB9D4D
+P 2350 2900
+F 0 "C1" H 2375 3000 50  0000 L CNN
+F 1 "100nF" H 2375 2800 50  0000 L CNN
+F 2 "w_capacitors:cnp_3mm_disc" H 2388 2750 50  0001 C CNN
+F 3 "" H 2350 2900 50  0000 C CNN
+	1    2350 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3550 3000 3350 3000
+Wire Wire Line
+	3350 3000 3350 2750
+Wire Wire Line
+	3350 2750 2350 2750
+$Comp
+L GND #PWR028
+U 1 1 56BBBE0A
+P 4950 4100
+F 0 "#PWR028" H 4950 3850 50  0001 C CNN
+F 1 "GND" H 4950 3950 50  0000 C CNN
+F 2 "" H 4950 4100 50  0000 C CNN
+F 3 "" H 4950 4100 50  0000 C CNN
+	1    4950 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L NMH0512SC U2
+U 1 1 56BD09BB
+P 7150 5400
+F 0 "U2" H 7150 5050 60  0000 C CNN
+F 1 "NMH0512SC" H 7150 5750 60  0000 C CNN
+F 2 "custom:NMH0512SC" H 7150 5300 60  0001 C CNN
+F 3 "" H 7150 5300 60  0000 C CNN
+	1    7150 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER_2 J4
+U 1 1 56BD114E
+P 5550 4600
+F 0 "J4" H 5550 4750 60  0000 C CNN
+F 1 "HEADER_2" H 5550 4450 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 5550 4600 60  0001 C CNN
+F 3 "" H 5550 4600 60  0000 C CNN
+	1    5550 4600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L HEADER_2 J5
+U 1 1 56BD11BF
+P 8650 4600
+F 0 "J5" H 8650 4750 60  0000 C CNN
+F 1 "HEADER_2" H 8650 4450 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 8650 4600 60  0001 C CNN
+F 3 "" H 8650 4600 60  0000 C CNN
+	1    8650 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER_3 J6
+U 1 1 56BD1228
+P 8650 5400
+F 0 "J6" H 8650 5600 60  0000 C CNN
+F 1 "HEADER_3" H 8650 5200 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 8650 5400 60  0001 C CNN
+F 3 "" H 8650 5400 60  0000 C CNN
+	1    8650 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 4550 8550 4550
+Wire Wire Line
+	5650 4650 8550 4650
+Wire Wire Line
+	7650 5400 8550 5400
+$Comp
+L C C15
+U 1 1 56BD1D15
+P 7950 5550
+F 0 "C15" H 7975 5650 50  0000 L CNN
+F 1 "100nF" H 7975 5450 50  0000 L CNN
+F 2 "w_capacitors:cnp_3mm_disc" H 7988 5400 50  0001 C CNN
+F 3 "" H 7950 5550 50  0000 C CNN
+	1    7950 5550
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C4
+U 1 1 56BD1D87
+P 7950 5250
+F 0 "C4" H 7975 5350 50  0000 L CNN
+F 1 "100nF" H 7975 5150 50  0000 L CNN
+F 2 "w_capacitors:cnp_3mm_disc" H 7988 5100 50  0001 C CNN
+F 3 "" H 7950 5250 50  0000 C CNN
+	1    7950 5250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7650 5300 7650 5100
+Wire Wire Line
+	7650 5100 8550 5100
+Wire Wire Line
+	7650 5500 7650 5700
+Wire Wire Line
+	7650 5700 8550 5700
+Connection ~ 7950 5400
+Connection ~ 7950 5100
+Connection ~ 7950 5700
+Connection ~ 8250 5400
+Wire Wire Line
+	8550 5100 8550 5300
+Connection ~ 8250 5100
+Wire Wire Line
+	8550 5700 8550 5500
+Connection ~ 8250 5700
+$Comp
+L CP1 C16
+U 1 1 56BD2C5E
+P 8250 5550
+F 0 "C16" H 8275 5650 50  0000 L CNN
+F 1 "47uF" H 8275 5450 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L6_P2.5" H 8250 5550 50  0001 C CNN
+F 3 "" H 8250 5550 50  0000 C CNN
+	1    8250 5550
+	-1   0    0    1   
+$EndComp
+$Comp
+L CP1 C12
+U 1 1 56BD2CDB
+P 8250 5250
+F 0 "C12" H 8275 5350 50  0000 L CNN
+F 1 "47uF" H 8275 5150 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L6_P2.5" H 8250 5250 50  0001 C CNN
+F 3 "" H 8250 5250 50  0000 C CNN
+	1    8250 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C14
+U 1 1 56BD3690
+P 6350 5350
+F 0 "C14" H 6375 5450 50  0000 L CNN
+F 1 "100nF" H 6375 5250 50  0000 L CNN
+F 2 "w_capacitors:cnp_3mm_disc" H 6388 5200 50  0001 C CNN
+F 3 "" H 6350 5350 50  0000 C CNN
+	1    6350 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L CP1 C13
+U 1 1 56BD3708
+P 6050 5350
+F 0 "C13" H 6075 5450 50  0000 L CNN
+F 1 "100uF" H 6075 5250 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L6_P2.5" H 6050 5350 50  0001 C CNN
+F 3 "" H 6050 5350 50  0000 C CNN
+	1    6050 5350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 5200 6650 5300
+Wire Wire Line
+	6050 5200 6650 5200
+Wire Wire Line
+	6650 5500 6650 5400
+Wire Wire Line
+	5750 5500 6650 5500
+Connection ~ 6350 5200
+Connection ~ 6350 5500
+Wire Wire Line
+	6050 5200 6050 4650
+Connection ~ 6050 4650
+Connection ~ 6050 5500
+Wire Wire Line
+	5750 5500 5750 4550
+Connection ~ 5750 4550
+$Comp
+L J0026D21E_J0-A/B/F U3
+U 1 1 56C259CB
+P 9400 2450
+F 0 "U3" H 9400 2450 0   0001 C CNN
+F 1 "J0026D21E_J0-A/B/F" H 9400 2450 0   0001 C CNN
+F 2 "pulse-eng:J0-A%2fB%2fF" H 9400 2450 60  0001 C CNN
+F 3 "" H 9400 2450 60  0000 C CNN
+	1    9400 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 1550 8650 1750
+Wire Wire Line
+	8650 1750 8700 1750
+Wire Wire Line
+	8600 1950 8700 1950
+Wire Wire Line
+	8600 1850 8600 1950
+Wire Wire Line
+	8700 2850 8650 2850
+Wire Wire Line
+	8650 2850 8650 3050
+Wire Wire Line
+	8700 3050 8700 3500
+NoConn ~ 10100 3050
+NoConn ~ 10100 3150
+$Comp
+L GND #PWR029
+U 1 1 56C2819C
+P 8700 3500
+F 0 "#PWR029" H 8700 3250 50  0001 C CNN
+F 1 "GND" H 8700 3350 50  0000 C CNN
+F 2 "" H 8700 3500 50  0000 C CNN
+F 3 "" H 8700 3500 50  0000 C CNN
+	1    8700 3500
+	1    0    0    -1  
+$EndComp
+Connection ~ 8700 3150
+Wire Wire Line
+	6050 5500 6050 5950
+Wire Wire Line
+	6050 5950 8400 5950
+Wire Wire Line
+	8400 5950 8400 5400
+Connection ~ 8400 5400
+Wire Wire Line
+	7200 2750 7700 2750
+NoConn ~ 8700 2650
+$EndSCHEMATC
