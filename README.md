@@ -32,7 +32,7 @@ As I wanted to have nice backpanel as well as Ethernet support, I designed a PCB
 - USB connector
 - +/- 12V DC/DC converter for the AOUT power supply
 
-The PCB was designed in [KiCad](http://kicad-pcb.org/) and produced by [OSH Park](https://oshpark.com/). The PCB is available [here](https://oshpark.com/shared_projects/DuxxcHS7). Feel free to order your own!
+The PCB was designed in [KiCad](http://kicad.org/) and produced by [OSH Park](https://oshpark.com/). The PCB is available [here](https://oshpark.com/shared_projects/DuxxcHS7). Feel free to order your own!
 
 Here is the bill of materials:
 
